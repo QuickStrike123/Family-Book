@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <title>Family Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Family Book</h1>
+    <p id="Name">Family Book</p>
+    <script>
+        
+        var FamilyName = [ "Family Book" , "Ananya" , "Harish" ,"Puji" ];
+
+        var FamilyMembers = [ "https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg" , "https://image.shutterstock.com/image-photo/joyful-beautiful-child-her-sister-260nw-1071020867.jpg" , "https://www-static.weddingbee.com/wp-content/uploads/2018/06/Sad-Man-369076.png" , "https://tvline.com/wp-content/uploads/2020/09/anna-faris-mom.jpg?w=620" ];
+
+        var i = 0;
+        
+        function Nextfamily(){
+
+        i++;
+
+        if ( i == 4){
+
+            i = 0;
+
+        }
+
+        document.getElementById("Name").innerHTML = FamilyName[i];
+
+        document.getElementById("FamilyMemberImages").src = FamilyMembers[i];
+
+        }
+    </script>
+    <img  width = "500" lenght = "500" id="FamilyMemberImages" src="https://images-na.ssl-images-amazon.com/images/I/91zbi9M+mKL.jpg">
+    <br>
+    <br>
+    <button type="button" onclick="Nextfamily()">Next</button>
+</body>
+</html>
